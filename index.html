@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="overflow-hidden">
+        <div class="container vh-100 vw-100">
+            <div class="w-100 h-100 position-relative">
+                <div class="w-100 h-100  overflow-hidden">
+                    <div class="position-relative w-100 h-100  transitionSlide" id="slider">
+                        <div class="slide w-100 h-100 bg-primary d-flex justify-content-center align-items-center position-absolute" style="--slide-id: 0;">
+                            <h1 class="fontSizeBig text-white opacity-50">Slide 1</h1>
+                        </div>
+                        <div class="slide w-100 h-100 bg-danger d-flex justify-content-center align-items-center position-absolute" style="--slide-id: 1;">
+                            <h1 class="fontSizeBig text-white opacity-50">Slide 2</h1>
+                        </div>
+                        <div class="slide w-100 h-100 bg-warning d-flex justify-content-center align-items-center position-absolute" style="--slide-id: 2;">
+                            <h1 class="fontSizeBig text-white opacity-50">Slide 3</h1>
+                        </div>
+                        <div class="slide w-100 h-100 bg-success d-flex justify-content-center align-items-center position-absolute" style="--slide-id: 3;">
+                            <h1 class="fontSizeBig text-white opacity-50">Slide 4</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute bottom-0 start-50 translate-middle d-flex gap-3">
+                    <div class="navigator bg-secondary bg-dark rounded-pill transitionSlide" data-naigator-id="0"></div>
+                    <div class="navigator bg-secondary rounded-pill transitionSlide" data-naigator-id="1"></div>
+                    <div class="navigator bg-secondary rounded-pill transitionSlide" data-naigator-id="2"></div>
+                    <div class="navigator bg-secondary rounded-pill transitionSlide" data-naigator-id="3"></div>
+                </div>
+                <div class="position-absolute start-0 top-50 translate-middle arrow fs-1 bg-secondary icon rounded-pill text-white d-flex justify-content-center align-items-center" id="left">
+                    <i class="fa-solid fa-play rotate"></i>
+                </div>
+                <div class="position-absolute start-100 top-50 translate-middle arrow fs-1 bg-secondary icon rounded-pill text-white d-flex justify-content-center align-items-center" id="right">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+</body>
+</html>

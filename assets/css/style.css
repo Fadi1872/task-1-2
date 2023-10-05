@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.transitionSlide{
+    transition: 1s;
+}
+.fontSizeBig{
+    font-size: 6rem;
+    cursor: default;
+}
+.icon{
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+.slide{
+    transform: translateX(calc(var(--slide-id) * 100%));
+}
+.rotate{
+    rotate: 180deg;
+}
+.navigator{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
